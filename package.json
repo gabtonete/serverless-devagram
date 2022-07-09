@@ -1,0 +1,17 @@
+{
+  "name": "sls-devagram-auth",
+  "version": "1.0.0",
+  "description": "",
+  "private": "true",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Gabriel Tonete Pinto",
+  "license": "ISC",
+  "devDependencies": {
+    "serverless-plugin-typescript": "^2.1.2",
+    "typescript": "^4.7.4"
+  }
+}
