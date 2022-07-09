@@ -7,13 +7,16 @@ provider:
   runtime: nodejs12.x
   stage: ${opt:stage, 'dev'}
   region: ${opt:region, 'us-east-1'}
+  environment:
+    USER_POOL_ID: us-east-1_cI9qLl1Te
+    USER_CLIENT_ID: 76t1hmirp6a39u23c4hh3pnvc6
 
 plugins:
   - serverless-plugin-typescript
 
 functions:
   signup:
-    handler: functions/auth.register
+    handler: src/functions/auth.register
     events:
       - http:
           path: register
